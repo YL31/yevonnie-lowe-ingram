@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yevonnie Lowe-Ingram's Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
   <meta name="description" content="">
 
   <meta property="og:title" content="">
@@ -13,15 +14,25 @@
   <meta property="og:url" content="">
   <meta property="og:image" content="">
 
+  <!---------Google Fonts here----------------------------------------------->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
+
+  <!---------Icon Fonts here------------------------------------------------->
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.png">
 
+  <script src="https://kit.fontawesome.com/ee454f2aa9.js" crossorigin="anonymous"></script>
+
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#fafafa">
 
-  <!------------------------ Icon Fonts here ------------------>
-  <script src="https://kit.fontawesome.com/ee454f2aa9.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -32,15 +43,16 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#about-me">About Me</a></li>
-          <li><a href="#contact-me">Contact Me</a></li>
+          <li><a href="#contact-me" id="contact-link">Contact Me</a></li>
        </ul>
      </nav>
-      <div>
-        <h1><span>Hey there! My name is Yevonnie Lowe-Ingram.</span><h1>
+      <div class="intro-greeting">
+        <h1>Hey there! My name is Yevonnie Lowe-Ingram.</h1>
         <h2>I'm a frontend developer who creates clean, beautiful, and accessible websites.</h2>
       </div> 
     </div>
- 
+  </header>
+
   <main>
     <article class="portfolio">
       <section id="projects">
@@ -49,46 +61,46 @@
           <div class="portfolio-wrapper">
            
             <div class="project-example">
-              <h5>Unplugged</h5>
-              <fig>
+              <h4>Unplugged</h4>
+              <figure>
                 <a href ="https://yl31.github.io/unplugged/" target="_blank">
                   <img src="img/yl31.github.io_unplugged_.png" alt="Unplugged Project">
                 </a>
-              </fig>
+              </figure>
              <p>A multi-page responsive website built from a Photoshop design comp using Flexbox.</p>
              <span>Tech</span>
               <p>HTML, CSS Flexbox</p>
             </div>
             <div class="project-example">
-              <h5>Guess the Word</h5>
-              <fig>
+              <h4>Guess the Word</h4>
+              <figure>
                 <a href ="https://yl31.github.io/guess-the-word/" target="_blank">
                   <img src="img/yl31.github.io_guess-the-word_.png" alt="Guess the Word Project">
                 </a>
-              </fig>
+              </figure>
               <p>A game that gives players eight chances to guess a randomly generated word. Once the player correctly guesses the word the game starts over with a new word.</p>
               <span>Tech</span>
                <p>Javscript</p>
             </div>
             <div class="project-example">
-              <h5>GitHub Repo Gallery</h5>
-              <fig>
+              <h4>GitHub Repo Gallery</h4>
+              <figure>
                 <a href ="https://yl31.github.io/github-repo-gallery-main/" target="_blank">
                 <img src="img/yl31.github.io_github-repo-gallery-main_.png" alt="GitHub Repo Gallery Project">
               </a>
-            </fig>
+            </figure>
             <p>A website built using GitHub's API to pull data from my GitHub portfolio to create a gallery for my repositories. Visitors can search for a specific repository and click on one to view details and a link to the repository in GitHub.
             </p>
               <span>Tech</span>
                <p>Javscript</p>
             </div>
             <div class="project-example">
-              <h5>Super Sticky Notes</h5>
-              <fig>
+              <h4>Super Sticky Notes</h4>
+              <figure>
                 <a href ="https://yl31.github.io/super-sticky-notes/" target="_blank">
                   <img src="img/yl31.github.io_super-sticky-notes_.png" alt="Super Sticky Notes Project">
                 </a>
-              </fig>
+              </figure>
               <p>An interactive app built with React that allows users to create, edit and delete sticky notes.</p>
                 <span>Tech</span>
                  <p>ES6, JSX</p>
@@ -100,45 +112,43 @@
       <section id="skills">
         <div class="content-wrapper">
           <h3>Skills</h3>
-            <div class="tech-skills-wrapper">
-              <div class="tech-logo">
-                <i class="fa-brands fa-html5 fa-6x" title="HTML5" alt="HTML5" arial-hidden="true"></i>
-                <span class="sr-only">HTML5</span>
-              </div>
-              <div class="tech-logo">
-                <i class="fa-brands fa-css3-alt fa-6x" title="CSS3" alt="CSS3" arial-hidden="true"></i>
-                <span class="sr-only">CSS3</span>
-              </div>
-              <div class="tech-logo">
-                <i class="fa-brands fa-js fa-6x" title="Javascript" alt="Javascript" arial-hidden="true"></i>
-                <span class="sr-only">Javascript</span>
-              </div>
-              <div class="tech-logo">
-                <i class="fa-brands fa-react fa-6x" title="React" alt="React" arial-hidden="true"></i>
-                <span class="sr-only">React</span>
-              </div>
-              <div class="tech-logo">
-                <i class="fa-brands fa-git-alt fa-6x" title="Git" alt="Git" arial-hidden="true"></i>
-                <span class="sr-only">Git</span>
-              </div>
-              <div class="tech-logo">
-                <i class="fa-brands fa-github fa-6x" title="GitHub" alt="GitHub" arial-hidden="true"></i>
-                <span class="sr-only">GitHub</span>
-              </div>
-            
-              <div class="more-skills-wrapper">
-                <p class="skill">Responsive Design</p>
-                <p class="skill">Visual Studio Code</p>
-                <p class="skill">CodeSandbox</p>
-              </div>
-
+          <div class="tech-skills-wrapper">
+            <div class="tech-logo">
+              <i class="fa-brands fa-html5 fa-6x" title="HTML5" alt="HTML5" arial-hidden="true"></i>
+              <span class="sr-only">HTML5</span>
             </div>
+            <div class="tech-logo">
+              <i class="fa-brands fa-css3-alt fa-6x" title="CSS3" alt="CSS3" arial-hidden="true"></i>
+                <span class="sr-only">CSS3</span>
+            </div>
+            <div class="tech-logo">
+              <i class="fa-brands fa-js fa-6x" title="Javascript" alt="Javascript" arial-hidden="true"></i>
+                <span class="sr-only">Javascript</span>
+            </div>
+            <div class="tech-logo">
+              <i class="fa-brands fa-react fa-6x" title="React" alt="React" arial-hidden="true"></i>
+                <span class="sr-only">React</span>
+            </div>
+            <div class="tech-logo">
+              <i class="fa-brands fa-git-alt fa-6x" title="Git" alt="Git" arial-hidden="true"></i>
+                <span class="sr-only">Git</span>
+            </div>
+            <div class="tech-logo">
+              <i class="fa-brands fa-github fa-6x" title="GitHub" alt="GitHub" arial-hidden="true"></i>
+                <span class="sr-only">GitHub</span>
+            </div>
+          </div>
+          <div class="more-skills-wrapper">
+              <p class="skill">Responsive Design</p>
+              <p class="skill">Visual Studio Code</p>
+              <p class="skill">CodeSandbox</p>
+          </div>
         </div>
       </section>
     </article>
 
     <section id="about-me">
-      <div>
+      <div class="content-wrapper">
         <h3>About Me</h3>
         <figure>
           <img src="img/ylowe_avatar.jpeg" id="profile-image" alt="Image of Yevonnie">
@@ -172,11 +182,11 @@
         </div>
         <div class="contact-social-icons">
           <a href="https://www.linkedin.com/in/yevonnie-l-a1185b210/" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-linkedin fa-2xl" alt="Yevonnie's LinkedIn account" arial-hidden="true"></i>
+            <i class="fa-brands fa-linkedin fa-2x" alt="Yevonnie's LinkedIn account" arial-hidden="true"></i>
             <span class="fa-sr-only">Yevonnie's LinkedIn account</span>
           </a>
           <a href="https://github.com/YL31" target="_blank" rel="noopener noreferrer">
-            <i class="fa-brands fa-github" alt="Yevonnie's GitHub account" arial-hidden="true"></i>
+            <i class="fa-brands fa-github fa-2x" alt="Yevonnie's GitHub account" arial-hidden="true"></i>
             <span class="fa-sr-only">Yevonnie's GitHub account</span>
           </a>
         </div>
@@ -190,7 +200,7 @@
     </div>
   </footer>
 
-  </header>
+
  
 
   <script src="js/app.js"></script>
