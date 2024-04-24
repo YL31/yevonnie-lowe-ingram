@@ -190,18 +190,23 @@ a {
 
 h1 {
     font-family: Alata, sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 2em;
+    font-size: 2.75em;
     line-height: 1.5em;
     width: 100%;
 }
 
-h2, h3 {
-    font-family: Alata, sans-serif;
-    font-style: normal;
-    font-size: 1.75em;
-    line-height: 1.5em;
+h2 {
+  font-family: Nunito Sans, sans-serif;
+  font-weight: 300;
+  font-size: 1.75em;
+  line-height: 1.5em;
+}
+
+h3 {
+  font-family: Alata, sans-serif;
+  font-style: normal;
+  font-size: 1.75em;
+  line-height: 1.5em;
 }
 
 h4 {
@@ -272,26 +277,34 @@ header nav ul {
   justify-content: space-around;
   flex-flow: row wrap;
   padding: 0;
-  width: 65%;
+  /* width: 65%; */
+}
+
+header nav ul li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 30px;
 }
 
 header nav ul li a {
   color:  #EEE4F0;
   font-size: 1.125em;
   font-weight: bold;
+  padding: 10px;
 }
 
 #contact-link {
   background-color: #F3728D;
   border-radius: 25px;
-  padding: 10px;
   color:#000;
 }
 
-#contact-link:hover {
+#projects-link:hover, #skills-link:hover, #about-me-link:hover, #contact-link:hover {
   background-color: #F4A2D3;
+  border-radius: 25px;
+  color:#000;
 }
-
 
 .intro-greeting {
   display: flex;
@@ -395,6 +408,8 @@ footer a {
   margin: 0;
   width: 40%;
 }
+
+
 
 
 /* ==========================================================================
