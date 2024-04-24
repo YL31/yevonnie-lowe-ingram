@@ -255,6 +255,12 @@ header, footer {
   padding: 0 0 50px 0;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  padding: 0;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
@@ -313,6 +319,50 @@ header nav ul li a {
   flex-flow: row wrap;
   margin: 45px 0;
 }
+
+.marquee-container { 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  white-space: nowrap;
+  border-radius: 50px;
+  background-color: #F3728D;
+  padding: 5px 0;
+} 
+
+.marquee-box {
+  width: 100%;
+  animation: marquee 30s linear infinite;
+}
+
+.marquee-content { 
+  font-size: 1.75em; 
+  margin-right: 20px; 
+  text-transform: uppercase;
+} 
+  
+@keyframes marquee { 
+  0% { 
+      transform: translateX(100%); 
+  } 
+
+  100% { 
+      transform: translateX(-100%); 
+  } 
+} 
+
+@keyframes textAnimation { 
+
+  0%, 
+  100% { 
+      transform: translateY(0); 
+  } 
+
+  50% { 
+      transform: translateY(-10px); 
+  } 
+} 
 
 footer {
   padding: 0;
