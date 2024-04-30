@@ -441,8 +441,9 @@ footer a {
 
 .tech-skills-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   margin: 0;
 }
 
@@ -454,6 +455,7 @@ footer a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   font-weight: bold;
   font-variant: small-caps;
   margin: 20px 0;
