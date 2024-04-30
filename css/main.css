@@ -214,6 +214,7 @@ h4 {
   font-family: Alata, sans-serif;
   font-size: 1.25em;
   line-height: 1.5em;
+  text-align: center;
 }
 
 p {
@@ -222,6 +223,7 @@ p {
 
 span {
   font-weight: bold;
+  text-align: center;
 }
 
 .content-wrapper {
@@ -401,8 +403,8 @@ footer a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-flow: row wrap;
-  margin: 50px 20px;
+  flex-flow: wrap;
+  /* margin: 50px 20px; */
   width: 100%;
   
 }
@@ -412,24 +414,28 @@ footer a {
 .project-example {
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  margin: 70px 20px;
-  box-shadow: 1px 1px 12px 0px;
-  border-radius: 70px;
+  align-items: stretch;
+  flex-direction: column;
+  flex-basis: 400px;
+  margin: 30px 5px;
+  box-shadow: 1px 3px 10px 1px #d3d3d3;
+  border-radius: 60px;
   /* width: 40%; */
-  
-
 }
 
-/* .project-example figure {
-  width: 80%;
+.project-example figure {
+  margin: 20px;
+  padding: 0;
 }
 
 .project-example p {
-  width: 50%;
-  text-align: left;
-} */
+  margin: 20px 20px;
+  padding: 0;
+} 
+
+.project-example-tech {
+  text-align: center;
+}
 
 /**** Skills ****/
 
