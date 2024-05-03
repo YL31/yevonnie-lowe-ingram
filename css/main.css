@@ -477,14 +477,47 @@ footer a {
 
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
+   Media Queries for Responsive Design.
+   These override the primary ('mobile first') styles.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 48em) {
+  /* Tablet Styles */
+
+
+
+ /**** About Me ****/
+
+  .bio {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+  }
+
+  #about-me figure {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+  }
+
+  .dev-story {
+  width: 70%;
+  padding: 0 5px;
+  }
+
 }
+
+
+
+
+
+@media only screen and (min-width: 75em) {
+
+}
+
+
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
