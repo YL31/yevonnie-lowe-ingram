@@ -257,7 +257,7 @@ header, footer {
   color: #EEE4F0;
   width: 100%;
   margin: 0;
-  /* padding: 0; */
+  /* padding: 0;  */
 }
 
 header {
@@ -287,7 +287,7 @@ header nav ul {
   justify-content: space-around;
   flex-flow: row wrap;
   padding: 0;
-  /* width: 65%; */
+  width: 100%;
 }
 
 header nav ul li {
@@ -299,9 +299,9 @@ header nav ul li {
 
 header nav ul li a {
   color:  #EEE4F0;
-  font-size: 1.125em;
+  font-size: .875em;
   font-weight: bold;
-  padding: 10px;
+  padding: 5px;
 }
 
 #contact-link {
@@ -484,6 +484,10 @@ footer a {
 @media only screen and (min-width: 48em) {
   /* Tablet Styles */
 
+ /**** General Styles ****/
+  h1 {
+    font-size: 
+  }
 
 
  /**** About Me ****/
