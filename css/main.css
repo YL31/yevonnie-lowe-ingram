@@ -176,6 +176,7 @@ textarea {
   font-size: 1em;
   text-align: left;
   color: black;
+  max-width: 100%;
 }
 
 ul {
@@ -401,11 +402,11 @@ footer a {
 .portfolio-wrapper {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   flex-flow: wrap;
   /* margin: 50px 20px; */
   width: 100%;
-  
+  margin: auto;
 }
 
 /**** Projects ****/
@@ -413,13 +414,13 @@ footer a {
 .project-example {
   display: flex;
   justify-content: center;
-  align-items: stretch;
+  align-items: center;
   flex-direction: column;
   flex-basis: 400px;
   margin: 30px 5px;
   box-shadow: 1px 3px 10px 1px #d3d3d3;
   border-radius: 60px;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   /* width: 40%; */
 }
 
@@ -512,12 +513,53 @@ button.project-page:hover {
 @media only screen and (min-width: 48em) {
   /* Tablet Styles */
 
- /**** General Styles ****/
+ /******** General Styles ********/
   h1 {
-    font-size: 3.5em;
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.75em;
+
+  }
+
+  h3 {
+    font-size: 2.125em;
+
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  p, span {
+    font-size: 1.125em;
+  }
+
+  /******** Header -- Footer Styles ********/
+
+  header nav ul li a {
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .marquee-content {
+    font-size: 2em;
   }
 
 
+  /******** Main Styles ********/
+  
+
+
+
+  /**** Portfoio ****/
+
+  button.project-page { 
+  font-size: 1.125em;
+  width: 50%;
+  }
+  
  /**** About Me ****/
 
   .bio {
