@@ -427,10 +427,24 @@ footer a {
 .project-example figure {
   margin: 20px;
   padding: 0;
+  min-height: 300px;
+  border-radius: 20px
 }
 
 .project-example figure img {
-  border-radius: 44px;
+  border-radius: 20px;
+}
+
+figure#sticky-note {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FEF1F5;
+  
+}
+
+img#sticky-note-image{
+  border-radius: 0;
 }
 
 .project-example p {
