@@ -257,7 +257,6 @@ header, footer {
   color: #EEE4F0;
   width: 100%;
   margin: 0;
-  /* padding: 0;  */
 }
 
 header {
@@ -368,14 +367,9 @@ header nav ul li a {
   } 
 } 
 
-/* footer {
-  padding: 0;
-} */
-
 footer .content-wrapper {
   margin: 0;
   padding: 25px 25px 0;
- 
 }
 
 footer a {
@@ -404,7 +398,6 @@ footer a {
   justify-content: space-around;
   align-items: stretch;
   flex-flow: wrap;
-  /* margin: 50px 20px; */
   width: 100%;
   margin: auto;
 }
@@ -421,13 +414,12 @@ footer a {
   box-shadow: 1px 3px 10px 1px #d3d3d3;
   border-radius: 60px;
   padding-bottom: 25px;
-  /* width: 40%; */
 }
 
 .project-example figure {
   margin: 20px;
   padding: 0;
-  min-height: 300px;
+  min-height: 350px;
   border-radius: 20px
 }
 
@@ -537,7 +529,7 @@ button.project-page:hover {
 
   h3 {
     font-size: 2.125em;
-
+    margin-left: 23px;
   }
 
   h4 {
@@ -568,7 +560,11 @@ button.project-page:hover {
 
   /**** Projects ****/
 
-  button.project-page { 
+  .project-example figure {
+    min-height: 440px;
+  }
+    
+    button.project-page { 
     font-size: 1.125em;
     width: 50%;
   }
@@ -606,7 +602,6 @@ button.project-page:hover {
 
   h2 {
     font-size: 2.75em;
-
   }
 
   h3 {
@@ -658,31 +653,30 @@ button.project-page:hover {
 
 /**** Projects ****/
 
-button.project-page { 
-  font-size: 1.25em;
-  width: 50%;
-}
+  button.project-page { 
+    font-size: 1.25em;
+    width: 50%;
+  }
 
 /**** About Me ****/
 
-.bio {
-  display: flex;
-  justify-content: space-between;
-  align-content: center;
-  width: 100%;
-}
+  .bio {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    }
 
-#about-me figure {
-  margin: 0;
-  padding: 0;
-  width: 30%;
-}
+  #about-me figure {
+    margin: 0;
+    padding: 0;
+    width: 30%;
+  }
 
-.dev-story {
-  width: 70%;
-  padding: 0 5px;
-}
-
+  .dev-story {
+    width: 70%;
+    padding: 0 5px;
+  }
 }
 
 @media print,
