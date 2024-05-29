@@ -331,7 +331,7 @@ header nav ul li a {
   overflow: hidden;
   white-space: nowrap;
   border-radius: 50px;
-  background-color: #F3728D;
+  background-color:#F3728D;
   padding: 5px 0;
 } 
 
@@ -341,7 +341,8 @@ header nav ul li a {
 }
 
 .marquee-content { 
-  font-size: 1.75em; 
+  font-size: 1.75em;
+  color: #000000;
   margin-right: 20px; 
   text-transform: uppercase;
 } 
@@ -450,19 +451,22 @@ img#sticky-note-image{
   margin-top: 0;
 }
 
-button.project-page {
+.project-link {
   display: block;
   background-color: #141414;
   border-color: #141414;
   border-radius: 30px;
   color: #FFFF;
   font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   width: 40%;
-  padding: 12px;
+  padding: 15px;
   margin: auto;
 }
 
-button.project-page:hover {
+.project-link:hover {
   background-color:#636363;
   border-color: #636363;
   border-radius: 30px;
@@ -565,9 +569,8 @@ button.project-page:hover {
     min-height: 440px;
   }
     
-    button.project-page { 
-    font-size: 1.125em;
-    width: 50%;
+    .project-link { 
+    width: 35%;
   }
   
  /**** About Me ****/
@@ -654,9 +657,9 @@ button.project-page:hover {
 
 /**** Projects ****/
 
-  button.project-page { 
-    font-size: 1.25em;
-    width: 50%;
+ .project-link { 
+    font-size: 1.125em;
+    width: 40%;
   }
 
 /**** About Me ****/
@@ -752,5 +755,13 @@ button.project-page:hover {
   h3 {
     page-break-after: avoid;
   }
+
+  <p>
+<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>
+</p>
 }
 
