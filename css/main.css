@@ -200,7 +200,7 @@ h1 {
 h2 {
   font-family: Nunito Sans, sans-serif;
   font-weight: 300;
-  font-size: 2.25em;
+  font-size: 2.50em;
   line-height: 1.5em;
   margin: 15px 0;
 }
@@ -572,9 +572,9 @@ background-color:#351D77;
     padding: 10px;
   }
 
-  .marquee-content {
+  /* .marquee-content {
     font-size: 2em;
-  }
+  } */
 
   .copyright {
     font-size: .875em;
@@ -584,6 +584,10 @@ background-color:#351D77;
   /******** Main Styles ********/
 
   /**** Projects ****/
+
+  .portfolio-wrapper {
+    padding-bottom: 15px;
+  }
 
   .project-example figure {
     min-height: 440px;
@@ -665,9 +669,9 @@ background-color:#351D77;
     padding: 10px;
   }
 
-  .marquee-content {
+  /* .marquee-content {
     font-size: 2.25em;
-  }
+  } */
 
   .copyright {
     font-size: 1em;
