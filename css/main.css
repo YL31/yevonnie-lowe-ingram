@@ -160,17 +160,18 @@ textarea {
 .clearfix::after {
   clear: both;
 }
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
- /* General Styles */
+/* General Styles */
 
- html {
+html {
   font-size: 16px;
- }
+}
 
- body {
+body {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   font-size: 1em;
@@ -185,16 +186,16 @@ ul {
 
 a {
   text-decoration: none;
-  color:  #EEE4F0;
+  color: #EEE4F0;
 }
 
 h1 {
-    font-family: Alata, sans-serif;
-    font-size: 2.75em;
-    line-height: 1.25em;
-    width: 100%;
-    margin: 0;
-    padding:0;
+  font-family: Alata, sans-serif;
+  font-size: 2.75em;
+  line-height: 1.25em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 h2 {
@@ -249,13 +250,14 @@ address {
 
 /**********************Base Header -- Footer Styles*************************/
 
-header, footer {
+header,
+footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   text-align: center;
-  background-color:#351D77;
+  background-color: #351D77;
   color: #EEE4F0;
   width: 100%;
   margin: 0;
@@ -299,7 +301,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color:  #EEE4F0;
+  color: #EEE4F0;
   font-size: .875em;
   font-weight: bold;
   padding: 5px;
@@ -308,13 +310,16 @@ header nav ul li a {
 #contact-link {
   background-color: #F3728D;
   border-radius: 25px;
-  color:#000;
+  color: #000;
 }
 
-#projects-link:hover, #skills-link:hover, #about-me-link:hover, #contact-link:hover {
+#projects-link:hover,
+#skills-link:hover,
+#about-me-link:hover,
+#contact-link:hover {
   background-color: #F4A2D3;
   border-radius: 25px;
-  color:#000;
+  color: #000;
 }
 
 .intro-greeting {
@@ -326,7 +331,7 @@ header nav ul li a {
 }
 
 .greeting-text {
- color: #F3728D;
+  color: #F3728D;
 }
 
 /* .marquee-container { 
@@ -446,21 +451,29 @@ figure#sticky-note {
   background-color: #FEF1F5;
 }
 
-img#sticky-note-image{
+img#sticky-note-image {
   border-radius: 0;
 }
 
 .project-example p {
   margin: 20px 20px;
   padding: 0;
-} 
+}
 
 .project-example-tech {
   text-align: center;
   margin-top: 0;
 }
 
-.project-link {
+.card-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+}
+
+.live-page-link,
+.github-link {
   display: block;
   background-color: #141414;
   border-color: #141414;
@@ -470,16 +483,17 @@ img#sticky-note-image{
   text-align: center;
   /* text-transform: uppercase; */
   letter-spacing: 1px;
-  width: 40%;
+  width: 30%;
   padding: 15px;
   margin: auto;
 }
 
-.project-link:hover {
-  background-color:#636363;
+.live-page-link:hover,
+.github-link:hover {
+  background-color: #636363;
   border-color: #636363;
   border-radius: 30px;
-  color:#FFFFFF
+  color: #FFFFFF
 }
 
 /**** Skills ****/
@@ -493,10 +507,11 @@ img#sticky-note-image{
 }
 
 #skills {
-background-color:#351D77;
+  background-color: #351D77;
 }
 
-#skills h3, .skill {
+#skills h3,
+.skill {
   color: #EEE4F0;
 }
 
@@ -510,7 +525,7 @@ background-color:#351D77;
 
 .more-skills-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   font-weight: bold;
@@ -542,7 +557,7 @@ background-color:#351D77;
 @media only screen and (min-width: 48em) {
   /* Tablet Styles */
 
- /******** General Styles ********/
+  /******** General Styles ********/
   h1 {
     font-size: 3em;
   }
@@ -561,7 +576,8 @@ background-color:#351D77;
     font-size: 1.25em;
   }
 
-  p, span {
+  p,
+  span {
     font-size: 1.125em;
   }
 
@@ -592,12 +608,12 @@ background-color:#351D77;
   .project-example figure {
     min-height: 440px;
   }
-    
-    .project-link { 
+
+  .project-link {
     width: 35%;
   }
-  
- /**** About Me ****/
+
+  /**** About Me ****/
 
   .bio {
     display: flex;
@@ -620,10 +636,10 @@ background-color:#351D77;
 }
 
 @media only screen and (min-width: 75em) {
-/* Desktop Styles */
+  /* Desktop Styles */
 
- /******** General Styles ********/
- 
+  /******** General Styles ********/
+
   h1 {
     font-size: 3.5em;
   }
@@ -640,11 +656,12 @@ background-color:#351D77;
     font-size: 1.5em;
   }
 
-  p, span {
+  p,
+  span {
     font-size: 1.25em;
   }
 
- /******** Header -- Footer Styles ********/
+  /******** Header -- Footer Styles ********/
 
   header nav {
     display: flex;
@@ -655,7 +672,7 @@ background-color:#351D77;
     width: 100%;
     padding: 0;
   }
- 
+
   header nav ul {
     display: flex;
     justify-content: space-around;
@@ -663,7 +680,7 @@ background-color:#351D77;
     padding: 0;
     width: 45%;
   }
- 
+
   header nav ul li a {
     font-size: 1em;
     padding: 10px;
@@ -677,23 +694,23 @@ background-color:#351D77;
     font-size: 1em;
   }
 
-/******** Main Styles ********/
+  /******** Main Styles ********/
 
-/**** Projects ****/
+  /**** Projects ****/
 
- .project-link { 
+  .project-link {
     font-size: 1.125em;
     width: 40%;
   }
 
-/**** About Me ****/
+  /**** About Me ****/
 
   .bio {
     display: flex;
     justify-content: space-between;
     align-content: center;
     width: 100%;
-    }
+  }
 
   #about-me figure {
     margin: 0;
@@ -708,9 +725,9 @@ background-color:#351D77;
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -721,6 +738,7 @@ background-color:#351D77;
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -780,5 +798,3 @@ background-color:#351D77;
     page-break-after: avoid;
   }
 }
-
-
