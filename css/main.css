@@ -222,7 +222,7 @@ h4 {
 }
 
 p {
-  font-size: .875em;
+  font-size: .9375em;
 }
 
 span {
@@ -544,7 +544,8 @@ img#sticky-note-image {
 }
 
 #about-me figure {
-  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 55%;
 }
 
