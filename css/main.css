@@ -313,15 +313,6 @@ header nav ul li a {
   color: #000;
 }
 
-#projects-link:hover,
-#skills-link:hover,
-#about-me-link:hover,
-#contact-link:hover {
-  background-color: #F4A2D3;
-  border-radius: 25px;
-  color: #000;
-}
-
 .intro-greeting {
   display: flex;
   justify-content: center;
@@ -384,10 +375,6 @@ footer a {
   background-color: #ffff;
 }
 
-.project-example:hover {
-  transform: scale(1.1);
-}
-
 .project-example figure {
   margin: 20px;
   padding: 0;
@@ -440,14 +427,6 @@ img#sticky-note-image {
   width: 30%;
   padding: 15px;
   margin: auto;
-}
-
-.live-page-link:hover,
-.github-link:hover {
-  background-color: #636363;
-  border-color: #636363;
-  border-radius: 30px;
-  color: #FFFFFF
 }
 
 /**** Skills ****/
@@ -543,6 +522,15 @@ img#sticky-note-image {
     padding: 10px;
   }
 
+  #projects-link:hover,
+  #skills-link:hover,
+  #about-me-link:hover,
+  #contact-link:hover {
+    background-color: #F4A2D3;
+    border-radius: 25px;
+    color: #000;
+  }
+
   .copyright {
     font-size: .875em;
   }
@@ -561,6 +549,18 @@ img#sticky-note-image {
 
   .project-link {
     width: 35%;
+  }
+
+  .project-example:hover {
+    transform: scale(1.1);
+  }
+
+  .live-page-link:hover,
+  .github-link:hover {
+    background-color: #636363;
+    border-color: #636363;
+    border-radius: 30px;
+    color: #FFFFFF
   }
 
   /**** About Me ****/
