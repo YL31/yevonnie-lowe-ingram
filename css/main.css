@@ -565,6 +565,10 @@ img#sticky-note-image {
     padding-bottom: 15px;
   }
 
+  .project-example {
+    transition: 1s;
+  }
+
   .project-example figure {
     min-height: 440px;
   }
@@ -575,6 +579,7 @@ img#sticky-note-image {
 
   .project-example:hover {
     transform: scale(1.1);
+    transition: 1s;
   }
 
   .live-page-link:hover,
